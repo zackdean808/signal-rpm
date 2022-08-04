@@ -1,6 +1,5 @@
 FROM ubuntu:latest 
 
-WORKDIR ~/root/downloads
 RUN apt-get update
 RUN apt-get install -y wget gpg
 RUN wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
