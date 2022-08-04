@@ -1,14 +1,12 @@
-Name:           
-Version:        
+Name:           signal-desktop 
+Version:        2.0 
 Release:        1%{?dist}
-Summary:        
+Summary:        Signal is an encrypted messaging applicaton
 
-License:        
-URL:            
-Source0:        
-
-BuildRequires:  
-Requires:       
+License:        MIT
+URL:            https://www.signal-desktop.com
+Source0: 	data.tar.xz       
+Source1:	control.tar.gz  
 
 %description
 
