@@ -5,9 +5,10 @@ Summary:        Signal is an encrypted messaging applicaton
 
 License:        MIT
 URL:            https://www.signal-desktop.com
-Source0: 	data.tar.xz       
-Source1:	control.tar.gz  
+#Source0: 	data.tar.xz       
+#Source1:	control.tar.gz  
 
+Source0: 	signal-desktop-2.0.tar.gz       
 %description
 
 
@@ -22,12 +23,15 @@ Source1:	control.tar.gz
 
 %install
 %make_install
+rm -rf $RPM_BUILD_ROOT
 
+%install -d $RPM_BUILD_ROOT/%{_datarootdir}/
 
 %files
 %license add-license-file-here
 %doc add-docs-here
-
+%dir configure/*
+%dir data/*
 
 
 %changelog
