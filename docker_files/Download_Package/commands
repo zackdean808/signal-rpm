@@ -1,0 +1,7 @@
+podman run -it --rm -v /home/z/Downloads:/tmp:Z dpkg:latest
+
+docker build . 
+
+docker build . --tag signal_downloader
+docker image rm signal_downloader 
+docker run -it signal_downloader /bin/bash
